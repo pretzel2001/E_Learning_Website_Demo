@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-division h3 {
+    padding-top: 5px;
+    font-size: 28px;
+
+}
+
+.header-division {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 20px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #CFCFCF;
+    width: 110%;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.search-bar button {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    background: #0088a9;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302f2f;
+    color: #e1e1e1;
+}
+
+.user-pic {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.user-pic img{
+    width: 60px;
+    height: 60px;
+}
+.user-pic h4{
+    padding-right: 5px;
+}
+@media (max-width: 575px) {
+    .search-bar {
+        width: 150px;
+        margin-top: 5px;
+        margin-left:15px;
+    }
+    .header-division h3{
+        font-size: 20px;
+    }
+    .user-pic{
+        margin-left: 5px;
+    }
+}
+.content {
+    width: cover;
+    height: 105vh;
+    background-color: #121212;
+    display: flex;
+    align-items: start;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: start;
+}
+
+.courses-offered h2 {
+    padding-top: 10px;
+    color: #e1e1e1;
+}
+
+.btn {
+    border: 0;
+    border-radius: 60%;
+    width: 60px;
+    height: 60px;
+
+}
+
+.offcanvas-body {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    height: 10px;
+    list-style: none;
+    background-color: black;
+    font-size: 20px;
+}
+
+.nav-item {
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 35px;
+    box-shadow: 0 10px 20px -8px solid black;
+}
+
+.nav-item {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nav-item:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.nav-item:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.courses-offered button {
+    width: 100px;
+    height: 35px;
+}
+
+#id1 {
+    background-color: #0088a9;
+}
+
+.btn-group button,
+.btn-group {
+    color: white;
+}
+@media (max-width: 575px){
+    .content{
+        height:200vh; 
+    }
+    .offcanvas-body {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        width: 25rem;
+        height: 10px;
+        list-style: none;
+        background-color: black;
+        font-size: 15px;
+    }
+    .nav-item {
+        border-radius: 4px;
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: start;
+        font-size: 15px;
+        padding: 16px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 35px;
+        box-shadow: 0 10px 20px -8px solid black;
+    }
+}
+.card{
+    width: 300px;
+    margin-top: 30px;
+    height: 300px;
+}
+.card a{
+    overflow: hidden;
+}
+.btn btn-dark{
+    font-size: 15px;
+}
+.card img{
+    height: 200px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-body{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#color1{
+    color: white;
+}
+.card-title{
+    word-wrap: break-word;
+    font-size: 170%;
+    height: 60px;
+}
+.card-body img{
+    width: 7vh;
+    height: 7vh;
+}
+.wrapper{
+    position: absolute;
+    left: 1480px;
+    top: 520px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 25px 20px rgba(0,0,0,0.1);
+}
+body{
+    background: #f2f2f2;
+}
+.wrapper .head-text{
+    line-height: 50px;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: #0088a9;
+}
+.wrapper .head-text img{
+    width: 35px;
+    height: 20px;
+}
+.wrapper .chat-box{
+    padding: 20px;
+    width: 100%;
+}
+.chat-box{
+    background-color: #302f2f;
+    color: white;
+}
+.chat-box .text2{
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.chat-box form{
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 1px solid white
+}
+.chat-box form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+form .field input, form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+form .textarea textarea{
+    padding-top: 10px;
+}
+
+form .field button{
+    width: 45%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+form .field input::placeholder, form .textarea textarea::placeholder{
+    color:#014758;
+}
+.chat-box form .field button{
+    border: none;
+    cursor: pointer;
+    background-color: #0088a9;
+    color: white;
+    padding-top: 2px;
+}
+.chat-box form .field button:hover{
+    transform: scale(0.95)
+}
+.chat-head{
+    position: absolute;
+    left: 1830px;
+    top: 1020px;
+}
+.chat-head img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
