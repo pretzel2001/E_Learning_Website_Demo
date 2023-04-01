@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #121212;
 }
+
 
 .header-division h3 {
     padding-top: 5px;
     font-size: 28px;
+    background-color: #302f2f;
 
 }
 
@@ -14,6 +17,7 @@
     justify-content: start;
     align-items: start;
     padding-left: 20px;
+    background-color: #302f2f;
 }
 
 img {
@@ -49,6 +53,7 @@ img {
     width: 20px;
     height: 20px;
     margin-bottom: 4px;
+    background: #0088a9;
 }
 
 .search-bar button {
@@ -69,36 +74,42 @@ img {
 }
 
 .user-pic {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    background-color: #302f2f;
 }
-.user-pic img{
+
+.user-pic img {
     width: 60px;
     height: 60px;
+    background-color: #302f2f;
 }
-.user-pic h4{
+
+.user-pic h4 {
     padding-right: 5px;
+    background-color: #302f2f;
 }
+
 @media (max-width: 575px) {
     .search-bar {
         width: 150px;
         margin-top: 5px;
-        margin-left:15px;
+        margin-left: 15px;
     }
-    .header-division h3{
+
+    .header-division h3 {
         font-size: 20px;
     }
-    .user-pic{
+
+    .user-pic {
         margin-left: 5px;
     }
 }
+
 .content {
-    width: cover;
-    height: 105vh;
-    background-color: #121212;
     display: flex;
     align-items: start;
 }
@@ -146,6 +157,9 @@ img {
     cursor: pointer;
     margin: 35px;
     box-shadow: 0 10px 20px -8px solid black;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 
 .nav-item {
@@ -186,10 +200,12 @@ img {
 .btn-group {
     color: white;
 }
-@media (max-width: 575px){
-    .content{
-        height:200vh; 
+
+@media (max-width: 575px) {
+    .content {
+        height: 200vh;
     }
+
     .offcanvas-body {
         display: flex;
         justify-content: start;
@@ -201,6 +217,7 @@ img {
         background-color: black;
         font-size: 15px;
     }
+
     .nav-item {
         border-radius: 4px;
         background-color: black;
@@ -216,56 +233,71 @@ img {
         box-shadow: 0 10px 20px -8px solid black;
     }
 }
-.card{
+
+.card {
     width: 300px;
     margin-top: 30px;
     height: 300px;
 }
-.card a{
+
+.card a {
     overflow: hidden;
 }
-.btn btn-dark{
+
+.btn btn-dark {
     font-size: 15px;
 }
-.card img{
+
+.card img {
     height: 200px;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.card-body{
+.card-body {
     background-color: #222222;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#color1{
+
+#color1 {
     color: white;
 }
-.card-title{
+
+.card-title {
     word-wrap: break-word;
     font-size: 170%;
     height: 60px;
+    background-color: #222222;
+
 }
-.card-body img{
+
+.card-body img {
     width: 7vh;
     height: 7vh;
+    background-color: #222222;
 }
-.wrapper{
+
+.wrapper {
     position: absolute;
     left: 1480px;
     top: 520px;
     max-width: 400px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 25px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.1);
+    display: none;
 }
-body{
+
+body {
     background: #f2f2f2;
 }
-.wrapper .head-text{
+
+.wrapper .head-text {
     line-height: 50px;
     color: white;
     border-radius: 15px 15px 0 0;
@@ -274,36 +306,46 @@ body{
     font-size: 20px;
     background-color: #0088a9;
 }
-.wrapper .head-text img{
+
+.wrapper .head-text img {
     width: 35px;
     height: 20px;
+    background-color: #0088a9;
 }
-.wrapper .chat-box{
+
+.wrapper .chat-box {
     padding: 20px;
     width: 100%;
 }
-.chat-box{
+
+.chat-box {
     background-color: #302f2f;
     color: white;
 }
-.chat-box .text2{
+
+.chat-box .text2 {
     text-align: center;
     line-height: 25px;
     font-size: 18px;
     font-weight: 200;
+    background-color: #302f2f;
 }
-.chat-box form{
+
+.chat-box form {
     padding: 10px 15px;
     margin: 20px 0;
     border-radius: 25px;
     border: 1px solid white
 }
-.chat-box form .field{
+
+.chat-box form .field {
     height: 50px;
     width: 100%;
     margin-top: 20px;
 }
-form .field input, form .textarea textarea{
+
+form .field input,
+form .textarea textarea {
     width: 100%;
     height: 100%;
     padding-left: 20px;
@@ -311,11 +353,14 @@ form .field input, form .textarea textarea{
     outline: none;
     border-radius: 5px;
 }
-form .textarea textarea{
+
+form .textarea textarea,
+form .field input {
     padding-top: 10px;
+    background-color: white;
 }
 
-form .field button{
+form .field button {
     width: 45%;
     height: 60%;
     display: flex;
@@ -324,27 +369,49 @@ form .field button{
     outline: none;
     border-radius: 5px;
 }
-form .field input::placeholder, form .textarea textarea::placeholder{
-    color:#014758;
+
+form .field input::placeholder,
+form .textarea textarea::placeholder {
+    color: #014758;
 }
-.chat-box form .field button{
+
+.chat-box form .field button {
     border: none;
     cursor: pointer;
     background-color: #0088a9;
     color: white;
     padding-top: 2px;
 }
-.chat-box form .field button:hover{
+
+.chat-box form .field button:hover {
     transform: scale(0.95)
 }
-.chat-head{
+
+.chat-head {
     position: absolute;
     left: 1830px;
     top: 1020px;
 }
-.chat-head img{
+
+.chat-head img {
     width: 60px;
     height: 60px;
     cursor: pointer;
 }
 
+@media (max-width: 575px) {
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        max-width: 10px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 25px 20px rgba(0, 0, 0, 0.1);
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
